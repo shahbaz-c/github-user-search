@@ -8,7 +8,7 @@ import Search from './components/Search';
 import Alert from './components/Alert';
 import About from './pages/About';
 import User from './components/User';
-import UserNotFound from './components/UserNotFound';
+import PageNotFound from './components/PageNotFound';
 
 const App = () => {
 	return (
@@ -29,7 +29,7 @@ const App = () => {
 					/>
 					<Route path='/about' element={<About />} />
 					<Route path='/user/:login' element={<User />} />
-					<Route path='*' element={<UserNotFound />} />
+					<Route path='*' element={<PageNotFound />} />
 				</Routes>
 			</div>
 		</div>
