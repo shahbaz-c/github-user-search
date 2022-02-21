@@ -1,13 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Dongle', sans-serif;
+	font-size: 1rem;
+	overflow-x: hidden;
+	width: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+	background-color: rgb(62, 38, 219);
+}
+
+.navTitle {
+	color: #fff;
+}
+
+/* Users Card Area */
+
+.user-profiles {
+	padding: 10px 0;
+	padding-top: 20px;
+}
+
+.userGrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1rem;
+}
+
+/* User Profile Cards */
+
+.card {
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+
+.profile-bg {
+	height: 125px;
+	width: 100%;
+	background-color: #3386ff;
+	background-color: rgb(101, 78, 250);
+}
+
+.profile-img img {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 1;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	border: 7px solid #fff;
+	margin-top: -80px;
+}
+
+.card:hover .profile-img img {
+	border-color: darkviolet;
+	transition: 0.7s;
+}
+
+.user-info {
+	padding: 10px 0;
+}
+
+.user-info h2 {
+	text-transform: lowercase;
+	font-weight: 900;
+	font-size: 25px;
+	margin: 0 0 20px;
+	text-align: center;
+	color: darkcyan;
+}
+
+.card:hover .user-info h2 {
+	color: darkviolet;
+	transition: 0.5s;
+}
+
+.preLoader {
+	width: 100px;
+	margin: auto;
+	display: block;
+	background-color: black;
+	margin-top: 10px;
+}
+
+.card.userInfo {
+	background-color: rgb(101, 78, 250);
+}
+
+span.badge {
+	font-size: 1em;
+}
+
+.repos {
+	font-size: 1em;
+}
+
+.repoDesc {
+	font-size: 0.8em;
+}
+
+.updateDesc {
+	font-size: 0.8em;
+}
+
+.repoPublic {
+	font-size: 0.8em;
+}
+
+/* Media Queries */
+@media (max-width: 990px) {
+	h1.navTitle {
+		margin-left: -40px;
+	}
+
+	.userGrid {
+		grid-template-columns: 1fr;
+	}
+
+	.user-profiles {
+		padding-top: 0px;
+	}
+}
+
+@media (max-width: 575px) {
+	.userInfoCard {
+		margin-top: 25px;
+	}
 }
