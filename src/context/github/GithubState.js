@@ -1,7 +1,7 @@
 import React, { useEffect, useReducer } from 'react';
 import GithubContext from './githubContext';
 import GithubReducer from './githubReducer';
-import PageNotFound from '../../components/PageNotFound';
+
 import {
 	DEFAULT_USERS,
 	SEARCH_USERS,
@@ -75,10 +75,6 @@ const GithubState = ({ children }) => {
 			`https://api.github.com/users/${login}?client_id=${clientID}&&client_secret=${clientSecret}`
 		);
 		const data = await response.json();
-
-		if (!login) {
-			<PageNotFound />;
-		}
 
 		dispatch({
 			type: GET_USER,
