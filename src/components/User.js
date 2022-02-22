@@ -1,10 +1,10 @@
 import React, { Fragment, useContext, useEffect } from 'react';
 import UserRepos from './UserRepos';
+import { useParams } from 'react-router-dom';
+import PreLoader from './PreLoader';
 
 import { faArrowLeft, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { useParams } from 'react-router-dom';
-import PreLoader from './PreLoader';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
