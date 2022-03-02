@@ -12,7 +12,7 @@ Bootstrap was used for styling.
 
 FontAwesome was used for icons.
 
-### `Website`
+### `Project URL`
 
 https://github-user-search0.netlify.app/
 
