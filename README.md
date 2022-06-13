@@ -14,6 +14,6 @@ FontAwesome was used for icons.
 
 ### `Project URL`
 
-https://github-user-search0.netlify.app/
+https://github-user-search.shahbazchoudhary.com/
 
 
