@@ -14,6 +14,6 @@ FontAwesome was used for icons.
 
 ### `Project URL`
 
-https://github-user-search.shahbazchoudhary.com/
+https://github-user-search.shahbazc.com/
 
 
